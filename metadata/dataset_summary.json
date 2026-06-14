@@ -1,0 +1,105 @@
+{
+  "dataset_name": "Underwater Propeller Fault Diagnosis Dataset",
+  "paper": "Quality-Aware Gated Cross-Modal Transformer for Noise-Robust Underwater Propeller Fault Diagnosis",
+  "included_data": "Original synchronized samples only; no degraded or generated robustness scenarios are included.",
+  "delivery_format": "Seven Git LFS tar archives under archives/. Extract them to restore gcm_t_input_dataset_with_rpm_info/.",
+  "sample_root_after_extraction": "gcm_t_input_dataset_with_rpm_info",
+  "labels": [
+    "healthy",
+    "minor",
+    "serious",
+    "loss",
+    "fishnet",
+    "plastic",
+    "3mm"
+  ],
+  "total_samples": 5554,
+  "total_data_files": 99972,
+  "total_data_bytes": 4878103646,
+  "total_data_gib": 4.543088,
+  "archives": [
+    {
+      "archive": "healthy.tar",
+      "label": "healthy",
+      "samples": 946,
+      "data_files": 17028,
+      "data_bytes": 723068401,
+      "archive_bytes": 753725440,
+      "sha256": "fc2dbd7315db514dc2619b2b1ee5db538e59035564039db7f4b85418d00c3073"
+    },
+    {
+      "archive": "minor.tar",
+      "label": "minor",
+      "samples": 712,
+      "data_files": 12816,
+      "data_bytes": 546068948,
+      "archive_bytes": 569180160,
+      "sha256": "9d71953052e6e9315620d20f78fbcb6fb6ac00c863db476827c0d12fe21d2276"
+    },
+    {
+      "archive": "serious.tar",
+      "label": "serious",
+      "samples": 704,
+      "data_files": 12672,
+      "data_bytes": 535892920,
+      "archive_bytes": 558694400,
+      "sha256": "5122aa1d90e14a83a304be521b387f78ee79352b09e7d9ebd4e722ac0b86bf51"
+    },
+    {
+      "archive": "loss.tar",
+      "label": "loss",
+      "samples": 834,
+      "data_files": 15012,
+      "data_bytes": 802488471,
+      "archive_bytes": 829542400,
+      "sha256": "24d2ac70d0115387634e8163549c9db0beb788101023e6bb92a35d8596ccafc4"
+    },
+    {
+      "archive": "fishnet.tar",
+      "label": "fishnet",
+      "samples": 683,
+      "data_files": 12294,
+      "data_bytes": 655917141,
+      "archive_bytes": 678072320,
+      "sha256": "df371a1051ca4be326438e509186cda53ac493e2770be58d4e3cdf9a158a4c75"
+    },
+    {
+      "archive": "plastic.tar",
+      "label": "plastic",
+      "samples": 1006,
+      "data_files": 18108,
+      "data_bytes": 1020687348,
+      "archive_bytes": 1053317120,
+      "sha256": "9fdba4a82e4b10bca5251b57857a38d143a6fc6dc93aa7bced2e8496c7213b5d"
+    },
+    {
+      "archive": "3mm.tar",
+      "label": "3mm",
+      "samples": 669,
+      "data_files": 12042,
+      "data_bytes": 593980417,
+      "archive_bytes": 615680000,
+      "sha256": "7a2b569e15b45b0715e58df6311da0a6aef4f87ae6a447e42378789202c49a5d"
+    }
+  ],
+  "modalities_per_sample": [
+    "audio_1s.npy",
+    "frames/frame_00.png ... frames/frame_14.png",
+    "elec.npy",
+    "meta.json"
+  ],
+  "label_distribution": {
+    "healthy": 946,
+    "minor": 712,
+    "serious": 704,
+    "loss": 834,
+    "fishnet": 683,
+    "plastic": 1006,
+    "3mm": 669
+  },
+  "rpm_values": [
+    400,
+    600,
+    800
+  ]
+}
